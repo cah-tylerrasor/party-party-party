@@ -69,7 +69,7 @@ function createPartyImage(inputFilename, outputStream, partyRadius, rotationSpee
         const gif = new gifEncoder(shape[0], shape[1]);
         gif.pipe(outputStream);
 
-        gif.setDelay(50);
+        gif.setDelay(100);
         gif.setRepeat(0);
         gif.setTransparent("0x00FF00");
         gif.writeHeader();
